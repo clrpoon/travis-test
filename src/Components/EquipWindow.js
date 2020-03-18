@@ -7,21 +7,21 @@ const EquipWindow = ({ name, description, url }) => (
     closeIcon
     trigger={
       <Button
+        data-testid="testItemField"
         style={{ boxShadow: "none" }}
         icon="question circle"
         size="tiny"
         circular
         basic
-        data-testid="newItemField"
       />
     }
   >
-    <Modal.Header data-testid="newName">{name}</Modal.Header>
+    <Modal.Header data-testid="testName">{name}</Modal.Header>
     <Modal.Content image>
       <Image wrapped size="medium" src={url} />
       <Modal.Description>
         <Header>About</Header>
-        <p>{description}</p>
+        <p data-testid="testDesc">{description}</p>
       </Modal.Description>
     </Modal.Content>
   </Modal>
