@@ -21,7 +21,7 @@ const EquipWindow = ({ name, description, url }) => (
       <Image wrapped size="medium" src={url} />
       <Modal.Description>
         <Header>About</Header>
-        <p data-testid="newDesc">{description}</p>
+        <p>{description}</p>
       </Modal.Description>
     </Modal.Content>
   </Modal>
