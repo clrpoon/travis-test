@@ -123,7 +123,7 @@ const EquipmentForm = () => {
           as={Link}
           to='/workouts'
           primary
-          disabled={!a}
+          disabled={!a}>
           GENERATE WORKOUT
         </Button>
       </Form>
