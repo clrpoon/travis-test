@@ -55,7 +55,7 @@ const EquipmentForm = () => {
     <Segment padded color="blue" style={{ width: "80%" }}>
       <Form size="large">
         <Form.Field>
-          <Header color="blue" dividing>
+          <Header data-cy='test1'color="blue" dividing>
             What Equipment Do You Have?
             <Header.Subheader>
               Selecting more than one option will give you different workouts for different equipments.
